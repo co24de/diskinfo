@@ -1,0 +1,42 @@
+require 'date'
+require 'yaml'
+require 'csv'
+require 'net/ssh'
+
+
+class DiskReporter
+  def initialize
+    @config = YAML.load_file("server_config.yml")
+  end
+
+  def check
+    $svary = []
+    @config.each do |info|
+          Net::SSH.start(info["server_name"],info["connect_user"],:keys => ['AWS_Book_key.pem']) do |ssh|
+          @ary = ssh.exec!('df -h | sed -e 1d').split(" ")
+        end
+          int = @ary.length % 5 * 5
+          while 0 < int do
+            @ary.delete_at(int)
+            int -= 5 
+          end
+        @svary.push(@ary)
+    end
+        p $svary
+  end
+
+  def outputcsv($svary)
+    echo 'aaa'
+    filepath = 'report.csv'
+    file = CSV.open(filepath, "w", :encording => "SJIS")
+    $srvary.each do |dd|
+      file.puts dd
+    end
+  end
+
+
+end
+
+obj = DiskReporter.new
+obj.check
+obj.outputcsv($svary)
