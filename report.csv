@@ -1,0 +1,15 @@
+DeviceName,DiskInfo
+ip-10-1-11-227
+/dev/xvda1,7.8G,1.4G,6.4G,18%,/
+devtmpfs,490M,56K,490M,1%,/dev
+tmpfs,498M,0,498M,0%,/dev/shm
+/dev/xvda1,7.8G,1.4G,6.4G,18%,/
+devtmpfs,490M,56K,490M,1%,/dev
+tmpfs,498M,0,498M,0%,/dev/shm
+ip-10-1-11-227
+/dev/xvda1,7.8G,1.4G,6.4G,18%,/
+devtmpfs,490M,56K,490M,1%,/dev
+tmpfs,498M,0,498M,0%,/dev/shm
+/dev/xvda1,7.8G,1.4G,6.4G,18%,/
+devtmpfs,490M,56K,490M,1%,/dev
+tmpfs,498M,0,498M,0%,/dev/shm

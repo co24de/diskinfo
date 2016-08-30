@@ -1,0 +1,10 @@
+- server_name: ec2-52-69-175-2.ap-northeast-1.compute.amazonaws.com
+  connect_user: ec2-user
+  server_type: dbsv
+  connect_port: 22
+  check_dir: /tmp
+- server_name: ec2-52-69-175-2.ap-northeast-1.compute.amazonaws.com
+  connect_user: ec2-user
+  server_type: dbsv
+  connect_port: 22
+  check_dir: /opt
