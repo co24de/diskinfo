@@ -35,7 +35,7 @@ class DiskReporter
     end
   end
 end
-
+#
 obj = DiskReporter.new
 obj.check
 obj.outputcsv($svary,$hostary)
